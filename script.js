@@ -1,3 +1,19 @@
+/* home.html mobile nav toggle */
+(function () {
+  var btn = document.querySelector('.menu-btn');
+  if (!btn) return;
+  btn.addEventListener('click', function () {
+    var header = document.querySelector('header');
+    if (header) header.classList.toggle('nav-open');
+  });
+  document.addEventListener('click', function (e) {
+    if (!e.target.closest('header')) {
+      var header = document.querySelector('header');
+      if (header) header.classList.remove('nav-open');
+    }
+  });
+})();
+
 /* Shared footer loader */
 (function () {
   var el = document.getElementById('shared-footer');
