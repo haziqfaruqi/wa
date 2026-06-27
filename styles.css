@@ -286,8 +286,8 @@ a {
 }
 
 .btn.sm {
-  padding: 11px 22px;
-  font-size: 16px;
+  padding: 9px 22px;
+  font-size: 15px;
 }
 
 .btn-primary {
@@ -394,8 +394,9 @@ a {
   z-index: 50;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 16px 48px;
+  gap: 36px;
+  padding: 0 48px;
+  height: 78px;
   background: var(--wa-magenta);
   border-bottom: 1px solid rgba(255, 255, 255, .18);
 }
@@ -421,7 +422,18 @@ a {
 
 .nav nav {
   display: flex;
-  gap: 36px;
+  align-items: center;
+  gap: 34px;
+  margin-left: auto;
+}
+
+.nav nav .btn.btn-maroon {
+  border: 1px solid rgba(255, 255, 255, .5);
+  border-radius: 999px;
+  padding: 9px 22px;
+  font-size: 15px;
+  font-family: var(--font-body);
+  letter-spacing: .06em;
 }
 
 .nav nav a {
@@ -617,7 +629,7 @@ a {
 /* ---- Stat band ---- */
 .stats {
   display: flex;
-  background: linear-gradient(rgba(69, 20, 33, .78), rgba(69, 20, 33, .5)), center/cover no-repeat url("assets/venue.jpg");
+  background: linear-gradient(rgba(69, 20, 33, .78), rgba(69, 20, 33, .5)), center/cover no-repeat url("assets/venue.webp");
 }
 
 .stats .stat {
@@ -766,7 +778,7 @@ a {
 
 /* ---- Programme (dark, carousel) ---- */
 .programme {
-  background: linear-gradient(rgba(69, 20, 33, .88), rgba(69, 20, 33, .88)), center/cover fixed url("assets/venue.jpg");
+  background: linear-gradient(rgba(69, 20, 33, .88), rgba(69, 20, 33, .88)), center/cover fixed url("assets/venue.webp");
   padding: 100px 48px;
 }
 
@@ -1686,7 +1698,7 @@ a {
 
 /* ---- Footer ---- */
 .footer {
-  background: linear-gradient(rgba(69, 20, 33, .92), rgba(69, 20, 33, .9)), center/cover fixed url("assets/venue.jpg");
+  background: linear-gradient(rgba(69, 20, 33, .92), rgba(69, 20, 33, .9)), center/cover fixed url("assets/venue.webp");
   color: #fff;
 }
 
