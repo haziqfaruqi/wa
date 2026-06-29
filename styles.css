@@ -2295,3 +2295,25 @@ a {
     font-size: clamp(32px, 7vw, 48px);
   }
 }
+
+/* ── Shared Footer (home-footer classes) ── */
+.home-footer-main{position:relative;background:url('assets/venue.webp') center center/cover no-repeat;color:rgba(255,255,255,.7);padding:64px 0;width:100%;box-sizing:border-box;}
+.home-footer-main::before{content:'';position:absolute;inset:0;background:rgba(20,4,8,.82);pointer-events:none;}
+.home-footer-main .wrap{position:relative;z-index:1;max-width:none;padding:0 clamp(24px,6vw,100px);}
+.home-footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:48px;padding-bottom:64px;}
+.home-footer-brand img{height:44px;width:auto;filter:brightness(0) invert(1);}
+.home-footer-tagline{font-size:11px;font-weight:700;letter-spacing:.14em;color:#c9972a;margin:16px 0 14px;text-transform:uppercase;}
+.home-footer-desc{font-size:14px;line-height:1.75;color:rgba(255,255,255,.55);margin:0 0 20px;}
+.home-footer-socials{display:flex;gap:18px;align-items:center;}
+.home-footer-socials a{color:rgba(255,255,255,.7);text-decoration:none;display:flex;align-items:center;transition:color .2s;}
+.home-footer-socials a:hover{color:#fff;}
+.home-footer-col{display:flex;flex-direction:column;gap:14px;}
+.home-footer-col-title{font-size:12px;font-weight:700;letter-spacing:.14em;color:#fff;text-transform:uppercase;margin-bottom:4px;}
+.home-footer-col a{font-size:14px;color:rgba(255,255,255,.6);text-decoration:none;transition:color .2s;}
+.home-footer-col a:hover{color:#fff;}
+.home-footer-legal{border-top:1px solid rgba(255,255,255,.15);padding:28px 0;font-size:12px;color:rgba(255,255,255,.35);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;}
+.home-footer-legal-links{display:flex;gap:8px;align-items:center;}
+.home-footer-legal-links a{color:rgba(255,255,255,.45);text-decoration:none;}
+.home-footer-legal-links a:hover{color:#fff;}
+@media(max-width:900px){.home-footer-grid{grid-template-columns:1fr 1fr;gap:36px;}.home-footer-brand{grid-column:1/-1;}}
+@media(max-width:560px){.home-footer-grid{grid-template-columns:1fr;}.home-footer-brand{grid-column:auto;}.home-footer-legal{flex-direction:column;align-items:flex-start;}}

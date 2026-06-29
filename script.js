@@ -14,6 +14,28 @@
   });
 })();
 
+/* footer-main.html loader */
+(function () {
+  function loadFooterMain() {
+    var els = document.querySelectorAll('#footer-main-wrap');
+    if (!els.length) return;
+    var onHome = window.location.pathname.indexOf('home.html') !== -1 || window.location.pathname === '/' || window.location.pathname.endsWith('/');
+    fetch('footer-main.html')
+      .then(function (r) { return r.text(); })
+      .then(function (html) {
+        els.forEach(function (el) {
+          el.innerHTML = html;
+          if (onHome) {
+            el.querySelectorAll('a[href^="home.html#"]').forEach(function (a) {
+              a.href = a.href.replace('home.html#', '#');
+            });
+          }
+        });
+      });
+  }
+  loadFooterMain();
+})();
+
 /* Shared footer loader */
 (function () {
   var el = document.getElementById('shared-footer');
