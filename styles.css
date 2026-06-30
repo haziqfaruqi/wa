@@ -1934,7 +1934,9 @@ a {
 @media (max-width:1000px) {
   .nav {
     padding: 14px 28px;
-    position: relative;
+    position: sticky;
+    top: 0;
+    z-index: 100;
   }
 
   .nav > .btn.btn-maroon {

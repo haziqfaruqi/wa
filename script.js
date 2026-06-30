@@ -353,7 +353,19 @@
 
     document.addEventListener('click', function (e) {
       var nav = e.target.closest('[data-go]');
-      if (nav) { e.preventDefault(); show(nav.getAttribute('data-go')); return; }
+      if (nav) {
+        e.preventDefault();
+        var target = nav.getAttribute('data-go');
+        var scroll = nav.getAttribute('data-scroll');
+        show(target);
+        if (scroll) {
+          setTimeout(function () {
+            var el = document.getElementById(scroll);
+            if (el) el.scrollIntoView({ behavior: 'smooth' });
+          }, 50);
+        }
+        return;
+      }
       var day = e.target.closest('[data-day]');
       if (day) { renderDay(day.getAttribute('data-day')); }
     });
