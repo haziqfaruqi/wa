@@ -1,6 +1,23 @@
 /* She Leads. Brands. Summit 2026 — standalone site behaviour.
    Vanilla JS. Renders data-driven sections and wires interactions. */
 
+/* ── Burger menu ── */
+(function () {
+  var burger = document.getElementById('burger');
+  var nav = document.getElementById('nav');
+  if (!burger || !nav) return;
+  burger.addEventListener('click', function () {
+    var open = nav.classList.toggle('nav--open');
+    burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  document.querySelectorAll('.nav__links a').forEach(function (a) {
+    a.addEventListener('click', function () {
+      nav.classList.remove('nav--open');
+      burger.setAttribute('aria-expanded', 'false');
+    });
+  });
+})();
+
 (function () {
   "use strict";
 

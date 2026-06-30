@@ -20,6 +20,7 @@
     var els = document.querySelectorAll('#footer-main-wrap');
     if (!els.length) return;
     var onHome = window.location.pathname.indexOf('home.html') !== -1 || window.location.pathname === '/' || window.location.pathname.endsWith('/');
+    var onSummit = window.location.pathname.indexOf('summit.html') !== -1;
     fetch('footer-main.html')
       .then(function (r) { return r.text(); })
       .then(function (html) {
@@ -29,6 +30,16 @@
             el.querySelectorAll('a[href^="home.html#"]').forEach(function (a) {
               a.href = a.href.replace('home.html#', '#');
             });
+          }
+          if (onSummit) {
+            var exploreCol = el.querySelector('.fmain-col');
+            if (exploreCol) {
+              exploreCol.innerHTML = '<div class="fmain-col-title">EXPLORE</div>' +
+                '<a href="#about">About</a>' +
+                '<a href="#programme">Programme</a>' +
+                '<a href="#speakers">Speakers</a>' +
+                '<a href="#tickets">Register</a>';
+            }
           }
         });
       });
