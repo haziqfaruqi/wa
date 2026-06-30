@@ -1,4 +1,4 @@
-/* home.html mobile nav toggle */
+/* homepage.html mobile nav toggle */
 (function () {
   var btn = document.querySelector('.menu-btn');
   if (!btn) return;
@@ -19,7 +19,7 @@
   function loadFooterMain() {
     var els = document.querySelectorAll('#footer-main-wrap');
     if (!els.length) return;
-    var onHome = window.location.pathname.indexOf('home.html') !== -1 || window.location.pathname === '/' || window.location.pathname.endsWith('/');
+    var onHome = window.location.pathname.indexOf('homepage.html') !== -1 || window.location.pathname === '/' || window.location.pathname.endsWith('/');
     var onSummit = window.location.pathname.indexOf('summit.html') !== -1;
     fetch('footer-main.html')
       .then(function (r) { return r.text(); })
@@ -27,8 +27,8 @@
         els.forEach(function (el) {
           el.innerHTML = html;
           if (onHome) {
-            el.querySelectorAll('a[href^="home.html#"]').forEach(function (a) {
-              a.href = a.href.replace('home.html#', '#');
+            el.querySelectorAll('a[href^="homepage.html#"]').forEach(function (a) {
+              a.href = a.href.replace('homepage.html#', '#');
             });
           }
           if (onSummit) {
@@ -242,7 +242,7 @@
 })();
 
 /* ============================================================
-   home.html behaviour (script2.js merged)
+   homepage.html behaviour (script2.js merged)
    ============================================================ */
 (function () {
   'use strict';
