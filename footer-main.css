@@ -100,10 +100,15 @@
 
 @media (max-width: 900px) {
   .fmain-inner { grid-template-columns: 1fr 1fr; gap: 36px; }
-  .fmain-brand { grid-column: 1 / -1; }
+  .fmain-brand { grid-column: 1 / -1; text-align: center; }
+  .fmain-brand img { margin: 0 auto; }
+  .fmain-socials { justify-content: center; }
+  .fmain-col { align-items: center; text-align: center; }
+  .fmain-legal { text-align: center; justify-content: center; }
+  .fmain-legal-links { justify-content: center; }
 }
 @media (max-width: 560px) {
   .fmain-inner { grid-template-columns: 1fr; }
   .fmain-brand { grid-column: auto; }
-  .fmain-legal { flex-direction: column; align-items: flex-start; }
+  .fmain-legal { flex-direction: column; align-items: center; }
 }

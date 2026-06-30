@@ -525,7 +525,7 @@ ul { margin: 0; padding: 0; list-style: none; }
   .section.audience-section { padding: 0; }
   .section.delivers-section { padding-top: 0; }
   .section.tix-section { padding-top: 0; }
-  .section.spon-section { padding-top: 0; }
+  .section.spon-section { padding-top: 0; padding-left: 24px; padding-right: 24px; }
   .section.section--cream { padding-top: 0; }
   .she-prog-head { padding-top: 32px; }
   .she-tabs-btns { flex-wrap: nowrap; gap: 8px; }
