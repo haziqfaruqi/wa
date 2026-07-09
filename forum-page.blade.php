@@ -81,7 +81,7 @@
       <div class="lbl">Day Forum</div>
     </div>
     <div class="stat">
-      <div class="num">150+</div>
+      <div class="num" data-counter data-target="150" data-suffix="+">0</div>
       <div class="lbl">Senior Delegates</div>
     </div>
     <div class="stat">

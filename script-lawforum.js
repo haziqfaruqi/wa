@@ -123,6 +123,42 @@
     });
   });
 
+  /* ---------- Stat counters ---------- */
+  var counters = document.querySelectorAll("[data-counter]");
+  if (counters.length && "IntersectionObserver" in window) {
+    var animateCounter = function (el) {
+      var target = parseFloat(el.getAttribute("data-target")) || 0;
+      var suffix = el.getAttribute("data-suffix") || "";
+      var duration = 1200;
+      var start = null;
+
+      function step(timestamp) {
+        if (start === null) start = timestamp;
+        var progress = Math.min((timestamp - start) / duration, 1);
+        var eased = 1 - Math.pow(1 - progress, 3);
+        var value = Math.floor(eased * target);
+        el.textContent = value.toLocaleString() + suffix;
+        if (progress < 1) {
+          requestAnimationFrame(step);
+        } else {
+          el.textContent = target.toLocaleString() + suffix;
+        }
+      }
+      requestAnimationFrame(step);
+    };
+
+    var counterObserver = new IntersectionObserver(function (entries, observer) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          animateCounter(entry.target);
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.4 });
+
+    counters.forEach(function (el) { counterObserver.observe(el); });
+  }
+
   /* ---------- Mobile nav toggle ---------- */
   var navToggle = document.getElementById("nav-toggle");
   var mainNav   = document.getElementById("main-nav");
