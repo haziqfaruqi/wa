@@ -68,7 +68,7 @@
           <p>Across business, policy, governance, and society. <b>She Leads. She Defends.</b> brings together the women who
             lead in and around the law. Lawyers, general counsels, judges, policymakers, board directors, and the next
             generation of legal talent — to <b>learn, connect</b>, and step into <b>influence</b> beyond the courtroom.</p>
-          <p>One day of <b>keynotes, expert panels and honest conversation</b>, followed by a hands-on <b>Leadership Masterclass.</b></p>
+          <p>One day of keynotes, expert panels and honest conversation, followed by a hands-on <b>Leadership Masterclass.</b></p>
         </div>
       </div>
     </div>
@@ -170,7 +170,6 @@
           <div class="wsa-chips">
             <span class="wsa-chip">Board Directors</span>
             <span class="wsa-chip">Bankers</span>
-            <span class="wsa-chip">CEOs</span>
             <span class="wsa-chip">Founders</span>
             <span class="wsa-chip">Compliance Leaders</span>
             <span class="wsa-chip">Risk Leaders</span>
@@ -188,6 +187,9 @@
             <span class="wsa-chip">Regulators</span>
             <span class="wsa-chip">Policymakers</span>
             <span class="wsa-chip">Government Legal Officers</span>
+            <span class="wsa-chip">Attorneys General</span>
+            <span class="wsa-chip">State Legal Advisors</span>
+            <span class="wsa-chip">Statutory Body Counsel</span>
           </div>
         </div>
 
@@ -201,6 +203,9 @@
             <span class="wsa-chip">Young Lawyers</span>
             <span class="wsa-chip">Law Graduates</span>
             <span class="wsa-chip">Selected Students</span>
+            <span class="wsa-chip">Postgraduate Law Students</span>
+            <span class="wsa-chip">Pupils in Chambers</span>
+            <span class="wsa-chip">Legal Interns / Trainees</span>
           </div>
         </div>
 
@@ -245,7 +250,7 @@
           <div><span class="dot"></span>Corporate Counsel</div>
           <div><span class="dot"></span>Governance</div>
           <div><span class="dot"></span>Senior Practice</div>
-          <div><span class="dot"></span>Cyber Security</div>
+          <div><span class="dot"></span>Cybersecurity</div>
         </div>
       </div>
       <div class="img">
@@ -305,15 +310,13 @@
   <section class="pricing" id="pricing">
     <div class="in">
       <div class="section-head">
-        <div class="eyebrow">Secure Your Place</div>
         <h2>A premier, senior-level <span class="accent">forum.</span></h2>
-        <p>Places are limited and curated. Early-bird closes <b>5 July 2026.</b></p>
+        <p><b>Seats</b> are <b>LIMITED</b> and <b>Curated.</b></p>
       </div>
       <div class="grid-2">
         <div class="tier">
-          <div class="tier-label">Forum</div>
           <h3>The Forum</h3>
-          <div class="desc">For the individual delegate.</div>
+          <div class="desc"><b style="color:#000;font-weight:700;">For the individual delegate.</b></div>
           <div class="price"><b>RM </b><span class="price-dashes">{{ $forumTicket ? number_format((float) $forumTicket->price, 2) : 'Unavailable' }}</span></div>
           <hr class="tier-divider">
           <ul>
@@ -326,13 +329,12 @@
         </div>
         <div class="tier featured">
           <span class="badge">★ &nbsp;Recommended</span>
-          <div class="tier-label">Forum + Masterclass</div>
           <h3>The Complete Experience</h3>
-          <div class="desc">The full day, plus the masterclass</div>
+          <div class="desc"><b style="color:#000;font-weight:700;">For VIPs and Teams</b></div>
           <div class="price"><b>RM </b><span class="price-dashes">{{ $completeTicket ? number_format((float) $completeTicket->price, 2) : 'Unavailable' }}</span></div>
           <hr class="tier-divider">
           <ul>
-            <li><span class="ck">●</span>Everything in the Forum pass</li>
+            <li><span class="ck">●</span><span>Everything in the <b>Delegate pass</b></span></li>
             <li><span class="ck">●</span>The premium afternoon Leadership Masterclass</li>
             <li><span class="ck">●</span>Certificate of completion</li>
             <li><span class="ck">●</span>Priority seating</li>
