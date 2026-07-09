@@ -1,26 +1,19 @@
-<!doctype html>
-<html lang="en">
+{{-- WomenAtlas — Law & Leadership Forum 2026 — main page view --}}
+@extends('layouts.app')
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>WomenAtlas — Law &amp; Leadership Forum 2026</title>
-  <link rel="stylesheet" href="styles-lawforum.css">
-</head>
-
-<body>
+@section('content')
 
   <!-- NAV -->
   <header class="nav">
     <div class="brand">
-      <img src="assets/womenatlas-logo-icon.svg" alt="WomenAtlas">
+      <img src="storage/media/womenatlas-logo-icon.svg" alt="{{ $siteSettings?->site_title ?? 'WomenAtlas' }}">
     </div>
     <nav id="main-nav">
       <a href="#about">About</a>
       <a href="#programme">Programme</a>
       <a href="#speakers">Speakers</a>
       <a href="#partners">Partners</a>
-      <button class="btn btn-maroon sm" data-buy>Buy Tickets</button>
+      <a class="btn btn-maroon sm" href="#pricing">Buy Tickets</a>
     </nav>
     <button class="nav-toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="main-nav">
       <span></span><span></span><span></span>
@@ -33,7 +26,6 @@
     <div class="scrim"></div>
     <div class="inner">
       <div class="copy">
-        <div class="kicker">WomenAtlas Presents</div>
         <h1>She Leads.<br><span class="it">She Defends.</span></h1>
         <div class="forum">Law &amp; Leadership Forum 2026</div>
         <p class="lede">A premier forum for the women shaping law, policy, business, society and future influence.</p>
@@ -55,7 +47,7 @@
             </svg>One-Day Forum + Masterclass</span>
         </div>
         <div class="cta">
-          <button class="btn btn-primary lg" data-buy>Buy Tickets <span>→</span></button>
+          <a class="btn btn-primary lg" href="#pricing">Buy Tickets <span>→</span></a>
           <a class="btn btn-ghost lg" href="#partners">Become a Partner</a>
         </div>
         <p class="credit">Organised by <b>WomenAtlas</b><span class="credit-sep">&nbsp; ·&nbsp; </span><span class="credit-break">Powered by <b>Laurea People's Signature</b></span></p>
@@ -67,7 +59,7 @@
   <section class="intro" id="about">
     <div class="intro__inner">
       <div class="intro__img">
-        <img src="assets/hero-2.webp" alt="Women in law and leadership" />
+        <img src="storage/media/hero-2.webp" alt="Women in law and leadership" />
       </div>
       <div class="intro__content">
         <h2 class="intro__h2-line1">A legal qualification was never just a path to practice.</h2>
@@ -135,7 +127,7 @@
     </div>
   </section>
 
- <!-- WHO SHOULD ATTEND -->
+  <!-- WHO SHOULD ATTEND -->
   <section class="wsa-section">
     <div class="wsa-wrap">
       <div class="section-head">
@@ -164,7 +156,7 @@
             <span class="wsa-chip">Senior Associates</span>
             <span class="wsa-chip">Corporate Secretaries</span>
             <span class="wsa-chip">Lawyers</span>
-            
+
             <span class="wsa-chip">Legal Advisors</span>
           </div>
         </div>
@@ -257,7 +249,7 @@
         </div>
       </div>
       <div class="img">
-        <img src="assets/curated-circle.webp" alt="Distinguished women in law">
+        <img src="storage/media/curated-circle.webp" alt="Distinguished women in law">
       </div>
     </div>
     </div>
@@ -265,7 +257,7 @@
   <!-- MASTERCLASS -->
   <section class="masterclass">
     <div class="in">
-      <div class="img"><img src="assets/attendees.webp" alt="Masterclass"></div>
+      <div class="img"><img src="storage/media/attendees.webp" alt="Masterclass"></div>
       <div class="body">
         <h2>The Lawyer's AI Playbook</h2>
         <p class="lede">From <b>Stuck to Started</b> — a hands-on <b>AI Masterclass</b> for women in law.</p>
@@ -286,22 +278,22 @@
     </div>
     <div class="why-grid">
       <div class="why-card">
-        <div class="why-card__img"><img src="assets/sp-1.webp" alt="The Room"></div>
+        <div class="why-card__img"><img src="storage/media/sp-1.webp" alt="The Room"></div>
         <h3>The Room</h3>
         <p>A full day among the women who lead across <b>Law, Governance</b> and <b>Business.</b></p>
       </div>
       <div class="why-card">
-        <div class="why-card__img"><img src="assets/sp-2.webp" alt="The Substance"></div>
+        <div class="why-card__img"><img src="storage/media/sp-2.webp" alt="The Substance"></div>
         <h3>The Substance</h3>
         <p>Working sessions on <b>Governance, Judgment, Regulation</b> and <b>Reform.</b></p>
       </div>
       <div class="why-card">
-        <div class="why-card__img"><img src="assets/sp-3.webp" alt="The Reach"></div>
+        <div class="why-card__img"><img src="storage/media/sp-3.webp" alt="The Reach"></div>
         <h3>The Reach</h3>
         <p>The <b>Boardroom, In-House Leadership, Policy</b> and the <b>Bench.</b></p>
       </div>
       <div class="why-card">
-        <div class="why-card__img"><img src="assets/sp-4.webp" alt="The Network"></div>
+        <div class="why-card__img"><img src="storage/media/sp-4.webp" alt="The Network"></div>
         <h3>The Network</h3>
         <p>The <b>WomenAtlas Legal Leadership Network</b>, continuing beyond the forum.</p>
       </div>
@@ -313,37 +305,39 @@
   <section class="pricing" id="pricing">
     <div class="in">
       <div class="section-head">
+        <div class="eyebrow">Secure Your Place</div>
         <h2>A premier, senior-level <span class="accent">forum.</span></h2>
-        <p><b>Seats</b> are <b>LIMITED</b> and <b>Curated.</b></p>
+        <p>Places are limited and curated. Early-bird closes <b>5 July 2026.</b></p>
       </div>
       <div class="grid-2">
         <div class="tier">
-          <span class="badge">★ &nbsp;DELEGATE PASS</span>
+          <div class="tier-label">Forum</div>
           <h3>The Forum</h3>
-          <div class="desc"><b style="color:#000;font-weight:700;">For the individual delegate.</b></div>
-          <div class="price"><b>RM </b><span class="price-dashes">300</span></div>
+          <div class="desc">For the individual delegate.</div>
+          <div class="price"><b>RM </b><span>{{ $forumTicket ? number_format((float) $forumTicket->price, 2) : 'Unavailable' }}</span></div>
           <hr class="tier-divider">
           <ul>
             <li><span class="ck">●</span>Full-day access to all keynotes, panels &amp; the fireside</li>
-            <li><span class="ck">●</span>The afternoon Leadership Masterclass</li>
             <li><span class="ck">●</span>Networking breakfast, lunch &amp; refreshments</li>
-            <li><span class="ck">●</span>Delegate pack + Certificate</li>
+            <li><span class="ck">●</span>Evening networking dinner</li>
+            <li><span class="ck">●</span>Delegate pack + certificate of attendance</li>
           </ul>
-          <button class="btn btn-secondary" data-buy>Register <span>→</span></button>
+          <a class="btn btn-secondary" href="{{ $forumTicket ? route('tickets.show', $forumTicket) : '#pricing' }}">Register <span>→</span></a>
         </div>
         <div class="tier featured">
-          <span class="badge">★ &nbsp;VIP PASS</span>
+          <span class="badge">★ &nbsp;Recommended</span>
+          <div class="tier-label">Forum + Masterclass</div>
           <h3>The Complete Experience</h3>
-          <div class="desc"><b style="color:#000;font-weight:700;">For VIPs and Teams</b></div>
-          <div class="price"><b>RM </b><span class="price-dashes">700</span></div>
+          <div class="desc">The full day, plus the masterclass</div>
+          <div class="price"><b>RM </b><span>{{ $completeTicket ? number_format((float) $completeTicket->price, 2) : 'Unavailable' }}</span></div>
           <hr class="tier-divider">
           <ul>
-            <li><span class="ck">●</span><span>Everything in the <b>Delegate pass</b></span></li>
-            <li><span class="ck">●</span>Exclusive networking dinner access</li>
-            <li><span class="ck">●</span>Media feature across WomenAtlas channels</li>
-            <li><span class="ck">●</span>Reserved VIP seating and networking</li>
+            <li><span class="ck">●</span>Everything in the Forum pass</li>
+            <li><span class="ck">●</span>The premium afternoon Leadership Masterclass</li>
+            <li><span class="ck">●</span>Certificate of completion</li>
+            <li><span class="ck">●</span>Priority seating</li>
           </ul>
-          <button class="btn btn-primary" data-buy>Register <span>→</span></button>
+          <a class="btn btn-primary" href="{{ $completeTicket ? route('tickets.show', $completeTicket) : '#pricing' }}">Register <span>→</span></a>
         </div>
       </div>
     </div>
@@ -363,7 +357,7 @@
 
   <!-- PARTNERS -->
   <section class="partners" id="partners">
-    <img class="partners__tugu" src="assets/tugu-bg.webp" alt="">
+    <img class="partners__tugu" src="storage/media/tugu-bg.webp" alt="">
     <div class="in">
       <h2>Built with a <span class="it" style="color:var(--wa-magenta)">small circle</span> of<br>aligned partners.</h2>
     </div>
@@ -393,52 +387,16 @@
     </div>
   </section>
 
-  <!-- FOOTER -->
-  <footer class="lf-footer">
-    <div class="lf-footer__inner">
-    <div class="lf-footer__top">
-      <div class="lf-footer__logo-col">
-        <img class="lf-footer__logo" src="assets/wa-womenatlas.webp" alt="WomenAtlas">
-      </div>
-      <div class="lf-footer__brand-body">
-        <p class="lf-footer__tagline">WHERE WOMEN ARE SEEN, HEARD &amp; RECOGNISED</p>
-        <p class="lf-footer__desc">WomenAtlas Media &amp; Events. Empowering women<br>through leadership, visibility, and community.</p>
-        <div class="lf-footer__socials">
-          <a href="https://www.linkedin.com/company/womenatlas" aria-label="LinkedIn"><img src="assets/mini-linkedin.webp" alt="LinkedIn" width="24" height="24"></a>
-          <a href="https://www.facebook.com/womenatlasofficial/" aria-label="Facebook"><img src="assets/mini-fb.webp" alt="Facebook" width="24" height="24"></a>
-          <a href="https://www.instagram.com/womenatlas_official/" aria-label="Instagram"><img src="assets/mini-ig.webp" alt="Instagram" width="24" height="24"></a>
-          <a href="https://www.tiktok.com/@thewomenatlas" aria-label="TikTok"><img src="assets/mini-tt.webp" alt="TikTok" width="24" height="24"></a>
-          <a href="https://www.threads.com/@womenatlas_official" aria-label="Threads"><img src="assets/mini-threads.webp" alt="Threads" width="24" height="24"></a>
-        </div>
-      </div>
-      <div class="lf-footer__col">
-        <div class="lf-footer__col-title">EXPLORE</div>
-        <a href="#partners">Partner with us</a>
-        <a href="#">Become a member</a>
-        <a href="#pricing" data-buy>Buy Tickets</a>
-      </div>
-      <div class="lf-footer__col">
-        <div class="lf-footer__col-title">CONNECT</div>
-        <a href="mailto:support@womenatlas.com">support@womenatlas.com</a>
-        <a href="tel:+60143139565">+60143139565</a>
-        <a href="#">FAQs</a>
-      </div>
-    </div>
-    <div class="lf-footer__bottom">
-      <span>Copyright &copy; 2025 - 2026 WomenAtlas Media &amp; Events Sdn. Bhd. 202501054466 (1655872-X). All Rights Reserved.</span>
-      <div class="lf-footer__legal">
-        <a href="#">Privacy</a>
-        <span>·</span>
-        <a href="#">Terms</a>
-        <span>·</span>
-        <a href="#">Cookies</a>
-      </div>
-    </div>
-    </div>
-  </footer>
+  @include('site-fragments.footer-forum')
 
   <div id="toast"></div>
-  <script src="script-lawforum.js"></script>
-</body>
 
-</html>
+@endsection
+
+@push('styles')
+  <link rel="stylesheet" href="{{ asset('site/css/styles-lawforum-cms.css') }}">
+@endpush
+
+@push('scripts')
+  <script src="{{ asset('site/js/script-lawforum.js') }}"></script>
+@endpush

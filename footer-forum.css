@@ -1,0 +1,178 @@
+/* ── footer-forum.css — Law Forum footer ── */
+#footer-forum-wrap .lf-footer {
+  background: radial-gradient(ellipse at center, #C2185B 0%, #451421 100%);
+  color: #fff;
+}
+
+#footer-forum-wrap .lf-footer__inner {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 64px;
+}
+
+#footer-forum-wrap .lf-footer__top {
+  padding: 64px 0 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+#footer-forum-wrap .lf-footer__logo-col {
+  display: flex;
+  align-items: flex-start;
+}
+
+#footer-forum-wrap .lf-footer__logo {
+  height: 100px;
+  width: auto;
+}
+
+#footer-forum-wrap .lf-footer__brand-body {
+  display: flex;
+  flex-direction: column;
+}
+
+#footer-forum-wrap .lf-footer__tagline {
+  font-family: "Poppins", -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .14em;
+  color: #e8b84b;
+  text-transform: uppercase;
+  margin: 18px 0 12px;
+}
+
+#footer-forum-wrap .lf-footer__desc {
+  font-family: "Poppins", -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.75;
+  color: rgba(255,255,255,.65);
+  margin: 0 0 24px;
+}
+
+#footer-forum-wrap .lf-footer__socials {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+#footer-forum-wrap .lf-footer__socials a {
+  color: rgba(255,255,255,.7);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  transition: opacity .2s;
+}
+
+#footer-forum-wrap .lf-footer__socials a:hover {
+  opacity: .75;
+}
+
+#footer-forum-wrap .lf-footer__socials img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  display: block;
+}
+
+#footer-forum-wrap .lf-footer__col {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+#footer-forum-wrap .lf-footer__col-title {
+  font-family: "Poppins", -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .14em;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+
+#footer-forum-wrap .lf-footer__col a {
+  font-family: "Poppins", -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: rgba(255,255,255,.7);
+  text-decoration: none;
+  transition: color .2s;
+}
+
+#footer-forum-wrap .lf-footer__col a:hover {
+  color: #fff;
+}
+
+#footer-forum-wrap .lf-footer__bottom {
+  padding: 24px 0 32px;
+  border-top: 1px solid rgba(255,255,255,.15);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  font-family: "Poppins", -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  color: rgba(255,255,255,.4);
+}
+
+#footer-forum-wrap .lf-footer__legal {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  color: rgba(255,255,255,.5);
+}
+
+#footer-forum-wrap .lf-footer__legal a {
+  color: rgba(255,255,255,.55);
+  text-decoration: none;
+  transition: color .2s;
+}
+
+#footer-forum-wrap .lf-footer__legal a:hover {
+  color: #fff;
+}
+
+@media (max-width: 900px) {
+  #footer-forum-wrap .lf-footer__inner {
+    padding: 0 28px;
+  }
+  #footer-forum-wrap .lf-footer__top {
+    flex-wrap: wrap;
+    gap: 32px;
+    padding: 48px 0 36px;
+  }
+  #footer-forum-wrap .lf-footer__bottom {
+    padding: 20px 0 28px;
+  }
+}
+
+@media (max-width: 640px) {
+  #footer-forum-wrap .lf-footer__inner {
+    padding: 0 20px;
+  }
+  #footer-forum-wrap .lf-footer__top {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 40px 0 32px;
+  }
+  #footer-forum-wrap .lf-footer__logo-col {
+    justify-content: center;
+  }
+  #footer-forum-wrap .lf-footer__brand-body {
+    align-items: center;
+  }
+  #footer-forum-wrap .lf-footer__socials {
+    justify-content: center;
+  }
+  #footer-forum-wrap .lf-footer__col {
+    align-items: center;
+  }
+  #footer-forum-wrap .lf-footer__bottom {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px 0 28px;
+  }
+}

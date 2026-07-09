@@ -1,4 +1,4 @@
-/* ============================================================
+﻿/* ============================================================
    WomenAtlas — Law & Leadership Forum 2026
    Pure HTML/CSS/JS landing page (no frameworks)
    ============================================================ */
@@ -6,7 +6,7 @@
 /* ---- Fonts ---- */
 @font-face {
   font-family: "Philosopher";
-  src: url("assets/fonts/Philosopher-Regular.ttf") format("truetype");
+  src: url("storage/media/Philosopher-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -14,7 +14,7 @@
 
 @font-face {
   font-family: "Philosopher";
-  src: url("assets/fonts/Philosopher-Bold.ttf") format("truetype");
+  src: url("storage/media/Philosopher-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -22,7 +22,7 @@
 
 @font-face {
   font-family: "Philosopher";
-  src: url("assets/fonts/Philosopher-Italic.ttf") format("truetype");
+  src: url("storage/media/Philosopher-Italic.ttf") format("truetype");
   font-weight: 400;
   font-style: italic;
   font-display: swap;
@@ -30,7 +30,7 @@
 
 @font-face {
   font-family: "Philosopher";
-  src: url("assets/fonts/Philosopher-BoldItalic.ttf") format("truetype");
+  src: url("storage/media/Philosopher-BoldItalic.ttf") format("truetype");
   font-weight: 700;
   font-style: italic;
   font-display: swap;
@@ -38,7 +38,7 @@
 
 @font-face {
   font-family: "Intrepid";
-  src: url("assets/fonts/Intrepid-Regular.ttf") format("truetype");
+  src: url("storage/media/Intrepid-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -46,7 +46,7 @@
 
 @font-face {
   font-family: "Poppins";
-  src: url("assets/fonts/Poppins-Light.ttf") format("truetype");
+  src: url("storage/media/Poppins-Light.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -54,7 +54,7 @@
 
 @font-face {
   font-family: "Poppins";
-  src: url("assets/fonts/Poppins-Regular.ttf") format("truetype");
+  src: url("storage/media/Poppins-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -62,7 +62,7 @@
 
 @font-face {
   font-family: "Poppins";
-  src: url("assets/fonts/Poppins-Medium.ttf") format("truetype");
+  src: url("storage/media/Poppins-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -70,7 +70,7 @@
 
 @font-face {
   font-family: "Poppins";
-  src: url("assets/fonts/Poppins-SemiBold.ttf") format("truetype");
+  src: url("storage/media/Poppins-SemiBold.ttf") format("truetype");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -78,7 +78,7 @@
 
 @font-face {
   font-family: "Poppins";
-  src: url("assets/fonts/Poppins-Bold.ttf") format("truetype");
+  src: url("storage/media/Poppins-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -86,7 +86,7 @@
 
 @font-face {
   font-family: "PlayfairDisplay";
-  src: url("assets/fonts/PlayfairDisplay-Regular.ttf") format("truetype");
+  src: url("storage/media/PlayfairDisplay-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -94,7 +94,7 @@
 
 @font-face {
   font-family: "PlayfairDisplay";
-  src: url("assets/fonts/PlayfairDisplay-Medium.ttf") format("truetype");
+  src: url("storage/media/PlayfairDisplay-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -102,7 +102,7 @@
 
 @font-face {
   font-family: "PlayfairDisplay";
-  src: url("assets/fonts/PlayfairDisplay-Bold.ttf") format("truetype");
+  src: url("storage/media/PlayfairDisplay-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -110,7 +110,7 @@
 
 @font-face {
   font-family: "PlayfairDisplay";
-  src: url("assets/fonts/PlayfairDisplay-Italic.ttf") format("truetype");
+  src: url("storage/media/PlayfairDisplay-Italic.ttf") format("truetype");
   font-weight: 400;
   font-style: italic;
   font-display: swap;
@@ -118,7 +118,7 @@
 
 @font-face {
   font-family: "PlayfairDisplay";
-  src: url("assets/fonts/PlayfairDisplay-BoldItalic.ttf") format("truetype");
+  src: url("storage/media/PlayfairDisplay-BoldItalic.ttf") format("truetype");
   font-weight: 700;
   font-style: italic;
   font-display: swap;
@@ -475,7 +475,7 @@ a {
   bottom: 0;
   right: 0;
   width: 75%;
-  background: center center/cover no-repeat url("assets/hero-backdrop.webp");
+  background: center center/cover no-repeat url("/lawforum/assets/masterclass.webp");
   pointer-events: none;
 }
 
@@ -680,7 +680,7 @@ a {
 /* ---- Stat band ---- */
 .stats {
   display: flex;
-  background: linear-gradient(rgba(69, 20, 33, .55), rgba(69, 20, 33, .45)), center/cover no-repeat url("assets/speaker-1.webp");
+  background: linear-gradient(rgba(69, 20, 33, .55), rgba(69, 20, 33, .45)), center/cover no-repeat url("/storage/media/speaker1.webp");
 }
 
 .stats .stat {
@@ -943,7 +943,7 @@ a {
 
 /* ---- Programme (dark, carousel) ---- */
 .programme {
-  background: linear-gradient(rgba(0, 0, 0, .45), rgba(0, 0, 0, .45)), center/cover fixed url("assets/speaker-1.webp");
+  background: linear-gradient(rgba(0, 0, 0, .45), rgba(0, 0, 0, .45)), center/cover fixed url("/storage/media/speaker1.webp");
   padding: 100px 48px;
 }
 
@@ -1187,7 +1187,7 @@ a {
   content: '';
   position: absolute;
   inset: -40px;
-  background: center/contain no-repeat url("assets/connection-bg.webp");
+  background: center/contain no-repeat url("storage/media/connection-bg.webp");
   opacity: 0.75;
   pointer-events: none;
 }
@@ -1492,7 +1492,7 @@ a {
   bottom: 0;
   width: 480px;
   height: 100%;
-  background: url('assets/tugu.webp') right bottom/contain no-repeat;
+  background: url('storage/media/tugu.webp') right bottom/contain no-repeat;
   opacity: 0.15;
   pointer-events: none;
 }
@@ -2030,7 +2030,7 @@ a {
   overflow: hidden;
   box-shadow: var(--shadow-lg);
   min-height: 480px;
-  background: linear-gradient(180deg, rgba(69, 20, 33, .25), rgba(69, 20, 33, .7)), center/cover no-repeat url("assets/venue-bg.webp");
+  background: linear-gradient(180deg, rgba(69, 20, 33, .25), rgba(69, 20, 33, .7)), center/cover no-repeat url("storage/media/venue-bg.webp");
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -2067,7 +2067,7 @@ a {
 
 /* ---- Footer ---- */
 .footer {
-  background: linear-gradient(rgba(69, 20, 33, .92), rgba(69, 20, 33, .9)), center/cover fixed url("assets/venue.webp");
+  background: linear-gradient(rgba(69, 20, 33, .92), rgba(69, 20, 33, .9)), center/cover fixed url("storage/media/venue.webp");
   color: #fff;
 }
 
@@ -2748,7 +2748,7 @@ a {
 }
 
 /* ── Shared Footer (home-footer classes) ── */
-.home-footer-main{position:relative;background:url('assets/venue.webp') center center/cover no-repeat;color:rgba(255,255,255,.7);padding:64px 0;width:100%;box-sizing:border-box;}
+.home-footer-main{position:relative;background:url('storage/media/venue.webp') center center/cover no-repeat;color:rgba(255,255,255,.7);padding:64px 0;width:100%;box-sizing:border-box;}
 .home-footer-main::before{content:'';position:absolute;inset:0;background:rgba(20,4,8,.82);pointer-events:none;}
 .home-footer-main .wrap{position:relative;z-index:1;max-width:none;padding:0 clamp(24px,6vw,100px);}
 .home-footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:48px;padding-bottom:64px;}
