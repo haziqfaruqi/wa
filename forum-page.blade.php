@@ -314,7 +314,7 @@
           <div class="tier-label">Forum</div>
           <h3>The Forum</h3>
           <div class="desc">For the individual delegate.</div>
-          <div class="price"><b>RM </b><span>{{ $forumTicket ? number_format((float) $forumTicket->price, 2) : 'Unavailable' }}</span></div>
+          <div class="price"><b>RM </b><span class="price-dashes">{{ $forumTicket ? number_format((float) $forumTicket->price, 2) : 'Unavailable' }}</span></div>
           <hr class="tier-divider">
           <ul>
             <li><span class="ck">●</span>Full-day access to all keynotes, panels &amp; the fireside</li>
@@ -329,7 +329,7 @@
           <div class="tier-label">Forum + Masterclass</div>
           <h3>The Complete Experience</h3>
           <div class="desc">The full day, plus the masterclass</div>
-          <div class="price"><b>RM </b><span>{{ $completeTicket ? number_format((float) $completeTicket->price, 2) : 'Unavailable' }}</span></div>
+          <div class="price"><b>RM </b><span class="price-dashes">{{ $completeTicket ? number_format((float) $completeTicket->price, 2) : 'Unavailable' }}</span></div>
           <hr class="tier-divider">
           <ul>
             <li><span class="ck">●</span>Everything in the Forum pass</li>
