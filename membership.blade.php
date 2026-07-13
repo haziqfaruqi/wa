@@ -1,0 +1,249 @@
+{{-- WomenAtlas — Membership — main page view --}}
+@extends('layouts.app')
+
+@section('content')
+
+  <!-- NAV -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="{{ url('/homepage.html') }}" class="nav__logo"><img src="storage/media/wa-logo.webp" alt="{{ $siteSettings?->site_title ?? 'WomenAtlas' }}"></a>
+      <nav class="nav__links" aria-label="Primary">
+        <a href="{{ url('/homepage.html') }}#about">About</a>
+        <a href="{{ url('/homepage.html') }}#sponsors">Sponsors</a>
+        <a href="{{ url('/membership.html') }}">Membership</a>
+      </nav>
+      <a href="{{ url('/lawforum.html') }}#pricing" class="btn btn-buy">Buy Tickets</a>
+      <button class="nav__burger" id="burger" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero__video">
+      <iframe src="https://player.vimeo.com/video/1160093262?background=1&autoplay=1&loop=1&muted=1&playsinline=1&controls=0" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+    </div>
+    <div class="hero__inner">
+      <div class="hero__card">
+        <img src="storage/media/membership-hero.webp" alt="WomenAtlas Platinum Membership card">
+      </div>
+      <div class="hero__copy">
+        <div class="hero__eyebrow">— Women Atlas</div>
+        <h1 class="hero__title">Membership</h1>
+        <div class="hero__lines">
+          <p>Where Growth Is Intentional.</p>
+          <p>Where Leadership Is Supported.</p>
+          <p>Where Influence Is Built With Substance.</p>
+        </div>
+        <p class="hero__lede">WomenAtlas Membership is designed for women who are intentional about <b>growth</b>, <b>leadership</b>, and <b>long-term impact</b>.</p>
+        <p class="hero__lede">A platform precisely curated to help women grow from within.</p>
+        <div class="hero__cta">
+          <a href="#apply" class="btn btn-apply">Apply Now</a>
+          <a href="#learn" class="btn btn-learn">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY MEMBERSHIP -->
+  <section class="why" id="learn">
+    <div class="why__inner">
+      <div class="why__copy">
+        <div class="why__eyebrow">— Why Membership</div>
+        <h2 class="why__title">The Case for <span class="it">Structured</span> Leadership Support</h2>
+        <p class="why__body">Women today are leading teams, building businesses, shaping narratives, and carrying responsibility—often without structured support, access, or intentional spaces to grow.</p>
+        <p class="why__body">WomenAtlas Membership was created to change that.</p>
+        <p class="why__body">Our membership offers a <b>considered ecosystem</b> where women are supported through <b>learning</b>, <b>mentorship</b>, <b>community</b>, and <b>visibility</b> in ways that are <b>credible</b>, <b>practical</b>, and <b>aligned</b> with real leadership journeys.</p>
+        <p class="why__note">This is not about being everywhere.<br>It's about being supported in the right places.</p>
+      </div>
+      <div class="why__qr">
+        <img src="storage/media/event_qr.webp" alt="Scan for event details">
+        <div class="why__qr-label">Scan for Event Details</div>
+        <a href="#" class="why__qr-link">or click here</a>
+        <div class="why__qr-bar"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ARCHITECTURE OF ACCESS -->
+  <section class="architecture">
+    <div class="architecture__inner">
+      <div class="architecture__eyebrow">The Architecture of Access</div>
+      <h2 class="architecture__title">WomenAtlas Membership is <span class="it">built around depth.</span></h2>
+      <p class="architecture__subtitle">Participant will leave with greater confidence, clarity, and community.</p>
+      <div class="architecture__grid">
+        <div class="architecture__card">
+          <h3>Leadership &amp; Growth Programs</h3>
+          <p>Curated programs focused on leadership development, personal growth, decision making, and influence— designed with practicality and real-world relevance.</p>
+        </div>
+        <div class="architecture__card">
+          <h3>Community &amp; Networking</h3>
+          <p>Access to a curated, supportive community of women leaders, professionals, founders, and emerging voices — designed for meaningful connection, not transaction networking.</p>
+        </div>
+        <div class="architecture__card">
+          <h3>Skill-Based Learning</h3>
+          <p>Workshops, talks, and sessions that build capability across communication, branding, visibility, confidence, and leadership presence.</p>
+        </div>
+        <div class="architecture__card">
+          <h3>Event &amp; Experiences</h3>
+          <p>Priority access to WomenAtlas events, summits, and gatherings — including flagship platforms such as She Leads. She Brands. Summit 2026.</p>
+        </div>
+        <div class="architecture__card">
+          <h3>Mentorship &amp; Shared Learning</h3>
+          <p>Opportunities to participate in mentor-mentee initiatives, peer learning, and experience-sharing with women who have walked the path before you.</p>
+        </div>
+        <div class="architecture__card">
+          <h3>Visibility &amp; Opportunities</h3>
+          <p>Opportunities to be featured, invited, or involved in WomenAtlas initiatives, conversations, and curated platforms— based on relevance and allignment.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMMUNITY -->
+  <section class="community">
+    <div class="community__inner">
+      <div class="community__img">
+        <img src="storage/media/membership-community.webp" alt="WomenAtlas community">
+      </div>
+      <div class="community__copy">
+        <div class="community__eyebrow">— Community</div>
+        <h2 class="community__title">Who This Community is <span class="it">Designed For</span></h2>
+        <p class="community__lede">WomenAtlas Membership is designed for women who are:</p>
+        <div class="community__list">
+          <div class="community__item"><span class="diamond">◆</span>Leading Teams, Organisations, Or Initiatives</div>
+          <div class="community__item"><span class="diamond">◆</span>Building Or Scaling Business</div>
+          <div class="community__item"><span class="diamond">◆</span>Growing Into Leadership Or Influence Roles</div>
+          <div class="community__item"><span class="diamond">◆</span>Developing Personal Authority And Credibility</div>
+          <div class="community__item"><span class="diamond">◆</span>Seeking International Learning And Community</div>
+          <div class="community__item"><span class="diamond">◆</span>Ready To Contribute, Not Just Outcome</div>
+        </div>
+        <p class="community__lede">Membership is also open to allies who actively support women's leadership and growth.</p>
+        <p class="community__note">This is a <b>curated</b> community, not a mass platform.</p>
+      </div>
+    </div>
+
+    <hr class="principles__divider">
+
+    <div class="principles">
+      <div class="principles__card">
+        <div class="principles__eyebrow">Our Values</div>
+        <h3 class="principles__title">Our Governing Principles</h3>
+        <hr class="principles__rule">
+        <h4 class="principles__sub">We Believe</h4>
+        <div class="principles__list">
+          <div class="principles__item"><span class="diamond">◆</span>Growth Should Be Supported, Not Isolating</div>
+          <div class="principles__item"><span class="diamond">◆</span>Leadership Should Be Nurtured, Not Assumed</div>
+          <div class="principles__item"><span class="diamond">◆</span>Visibility Should Be Credible, Not Performative</div>
+          <div class="principles__item"><span class="diamond">◆</span>Community Should Be Intentional, Not Transactional</div>
+        </div>
+        <p class="principles__note">WomenAtlas Membership is built with <b>structure</b>, <b>care</b>, and <b>longevity</b> — so members grow with confidence and clarity over time.</p>
+      </div>
+      <div class="principles__card">
+        <div class="principles__eyebrow">How It Works</div>
+        <h3 class="principles__title">Membership Structure</h3>
+        <hr class="principles__rule">
+        <div class="principles__list principles__list--spaced">
+          <div class="principles__item"><span class="diamond">◆</span>Membership Is Application-Based</div>
+          <div class="principles__item"><span class="diamond">◆</span>Applications Are Reviewed To Ensure Allignment</div>
+          <div class="principles__item"><span class="diamond">◆</span>Approved Members Receive Onboarding Details</div>
+          <div class="principles__item"><span class="diamond">◆</span>Membership Access Begin Upon Confirmation</div>
+        </div>
+        <p class="principles__note">This process helps us preserve the <b>quality</b>, <b>safety</b>, and <b>relevance</b> of the WomenAtlas quality.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ADMISSION & ONBOARDING -->
+  <section class="admission">
+    <div class="admission__inner">
+      <div class="admission__eyebrow">Joining Us</div>
+      <h2 class="admission__title">Admission &amp; <span class="it">Onboarding</span></h2>
+      <p class="admission__lede">WomenAtlas offers thoughtfully designed membership tiers to support different needs, stages, and levels of engagement.</p>
+      <p class="admission__lede">Each tier is designed too provide meaningful value while maintaining the integrity and quality of the community.</p>
+      <div class="admission__soon">
+        <h3>Coming Soon !</h3>
+        <p>Stay tuned for updates !</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- APPLY -->
+  <section class="apply" id="apply">
+    <div class="apply__inner">
+      <div class="apply__form">
+        <div class="apply__eyebrow">— Apply Now</div>
+        <h2 class="apply__title">Begin Your <span class="it">Application</span></h2>
+        <p class="apply__lede">If you are ready to grow with intention, lead with depth, and be part of a supportive leadership ecosystem, <b>we invite you to apply</b>.</p>
+        <form class="apply__fields">
+          <div class="apply__row">
+            <div class="apply__field">
+              <label for="apply-first-name">First Name</label>
+              <input type="text" id="apply-first-name" name="first_name">
+            </div>
+            <div class="apply__field">
+              <label for="apply-last-name">Last Name</label>
+              <input type="text" id="apply-last-name" name="last_name">
+            </div>
+          </div>
+          <div class="apply__field">
+            <label for="apply-email">Email</label>
+            <input type="email" id="apply-email" name="email">
+          </div>
+          <div class="apply__field">
+            <label for="apply-phone">Phone</label>
+            <input type="tel" id="apply-phone" name="phone" placeholder="+60">
+          </div>
+          <div class="apply__field">
+            <label>Membership Plan</label>
+            <div class="apply__plans">
+              <label class="apply__plan"><input type="radio" name="plan" value="community" checked><span>Community</span></label>
+              <label class="apply__plan"><input type="radio" name="plan" value="professional"><span>Professional</span></label>
+              <label class="apply__plan"><input type="radio" name="plan" value="leadership"><span>Leadership</span></label>
+            </div>
+          </div>
+          <label class="apply__agree"><input type="checkbox" required> I agree to the <a href="#">Terms of Service</a></label>
+          <button type="submit" class="apply__submit">Submit Application</button>
+        </form>
+      </div>
+      <div class="apply__aside">
+        <img class="apply__aside-logo" src="storage/media/logo-wa-mark.webp" alt="WomenAtlas">
+        <p class="apply__aside-lede">WomenAtlas Membership is not about keeping up.</p>
+        <p class="apply__aside-lede">It is about building <b>clarity</b>, <b>confidence</b>, and <b>credibility</b> — at your own pace, with the right support.</p>
+        <p class="apply__aside-lede">If this resonates with where you are or where you're heading,</p>
+        <p class="apply__aside-highlight">You're in the right place.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <div id="footer-main-wrap"></div>
+
+@endsection
+
+@push('styles')
+  <link rel="stylesheet" href="{{ asset('site/css/membership.css') }}">
+  <link rel="stylesheet" href="{{ asset('site/css/footer-main.css') }}">
+@endpush
+
+@push('scripts')
+  <script src="{{ asset('site/js/script-footer.js') }}"></script>
+  <script>
+    (function () {
+      var burger = document.getElementById('burger');
+      var nav = document.getElementById('nav');
+      if (!burger || !nav) return;
+      burger.addEventListener('click', function () {
+        var open = nav.classList.toggle('nav--open');
+        burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+      });
+      document.querySelectorAll('.nav__links a').forEach(function (a) {
+        a.addEventListener('click', function () {
+          nav.classList.remove('nav--open');
+          burger.setAttribute('aria-expanded', 'false');
+        });
+      });
+    })();
+  </script>
+@endpush
