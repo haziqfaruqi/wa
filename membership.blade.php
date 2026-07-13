@@ -67,7 +67,7 @@
   </section>
 
   <!-- ARCHITECTURE OF ACCESS -->
-  <section class="architecture">
+  <section class="architecture" id="architecture">
     <div class="architecture__inner">
       <div class="architecture__eyebrow">The Architecture of Access</div>
       <h2 class="architecture__title">WomenAtlas Membership is <span class="it">built around depth.</span></h2>
@@ -102,7 +102,7 @@
   </section>
 
   <!-- COMMUNITY -->
-  <section class="community">
+  <section class="community" id="community">
     <div class="community__inner">
       <div class="community__img">
         <img src="storage/media/membership-community.webp" alt="WomenAtlas community">
@@ -218,17 +218,74 @@
   </section>
 
   <!-- FOOTER -->
-  <div id="footer-main-wrap"></div>
+  <footer class="mem-footer">
+    <div class="mem-footer__inner">
+      <div class="mem-footer__top">
+        <div class="mem-footer__brand">
+          <img src="storage/media/wa-logo.webp" alt="{{ $siteSettings?->site_title ?? 'WomenAtlas' }}" style="filter:brightness(0) invert(1)">
+          <p class="mem-footer__tagline">WHERE WOMEN ARE SEEN, HEARD &amp; RECOGNISED</p>
+          <p class="mem-footer__desc">WomenAtlas Membership — a curated community for women who are intentional about growth, leadership, and long-term impact.</p>
+        </div>
+        <div class="mem-footer__col">
+          <div class="mem-footer__col-title">EXPLORE</div>
+          <a href="#learn">Why Membership</a>
+          <a href="#architecture">Membership Benefits</a>
+          <a href="#community">Community</a>
+          <a href="#apply">Apply Now</a>
+        </div>
+        <div class="mem-footer__col">
+          <div class="mem-footer__col-title">EVENTS</div>
+          <a href="{{ url('/summit.html') }}">She Leads. She Brands. Summit</a>
+          <a href="{{ url('/lawforum.html') }}">Women in Law &amp; Leadership Forum</a>
+        </div>
+        <div class="mem-footer__col">
+          <div class="mem-footer__col-title">CONNECT</div>
+          <a href="mailto:support@womenatlas.com">support@womenatlas.com</a>
+          <a href="tel:+60143139565">+60143139565</a>
+        </div>
+      </div>
+      <div class="mem-footer__socials">
+        <a href="https://www.linkedin.com/company/womenatlas/" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM3.56 20.45h3.56V9H3.56v11.45z"/></svg>
+        </a>
+        <a href="https://www.facebook.com/womenatlasofficial" target="_blank" rel="noopener" aria-label="Facebook">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.07C24 5.41 18.63 0 12 0S0 5.41 0 12.07C0 18.1 4.39 23.1 10.13 24v-8.44H7.08v-3.49h3.04V9.41c0-3.02 1.8-4.7 4.54-4.7 1.31 0 2.69.24 2.69.24v2.97h-1.51c-1.49 0-1.96.93-1.96 1.89v2.26h3.32l-.53 3.49h-2.79V24C19.61 23.1 24 18.1 24 12.07z"/></svg>
+        </a>
+        <a href="https://www.instagram.com/womenatlas_official" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 3.25.15 4.77 1.69 4.92 4.92.06 1.27.07 1.65.07 4.85 0 3.2-.01 3.58-.07 4.85-.15 3.23-1.66 4.77-4.92 4.92-1.27.06-1.64.07-4.85.07-3.2 0-3.58-.01-4.85-.07-3.26-.15-4.77-1.7-4.92-4.92C2.17 15.58 2.16 15.2 2.16 12c0-3.2.01-3.58.07-4.85C2.38 3.86 3.9 2.31 7.15 2.23 8.42 2.17 8.8 2.16 12 2.16zM12 0C8.74 0 8.33.01 7.05.07 2.7.27.27 2.7.07 7.05.01 8.33 0 8.74 0 12c0 3.26.01 3.67.07 4.95.2 4.36 2.62 6.78 6.98 6.98C8.33 23.99 8.74 24 12 24c3.26 0 3.67-.01 4.95-.07 4.35-.2 6.78-2.62 6.98-6.98.06-1.28.07-1.69.07-4.95 0-3.26-.01-3.67-.07-4.95C23.73 2.7 21.31.27 16.95.07 15.67.01 15.26 0 12 0zm0 5.84a6.16 6.16 0 1 0 0 12.32A6.16 6.16 0 0 0 12 5.84zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.4-11.85a1.44 1.44 0 1 0 0 2.88 1.44 1.44 0 0 0 0-2.88z"/></svg>
+        </a>
+        <a href="https://www.threads.net/@womenatlas_official" target="_blank" rel="noopener" aria-label="Threads">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+            <path d="M6.321 6.016c-.27-.18-1.166-.802-1.166-.802.756-1.081 1.753-1.502 3.132-1.502.975 0 1.803.327 2.394.948s.928 1.509 1.005 2.644q.492.207.905.484c1.109.745 1.719 1.86 1.719 3.137 0 2.716-2.226 5.075-6.256 5.075C4.594 16 1 13.987 1 7.994 1 2.034 4.482 0 8.044 0 9.69 0 13.55.243 15 5.036l-1.36.353C12.516 1.974 10.163 1.43 8.006 1.43c-3.565 0-5.582 2.171-5.582 6.79 0 4.143 2.254 6.343 5.63 6.343 2.777 0 4.847-1.443 4.847-3.556 0-1.438-1.208-2.127-1.27-2.127-.236 1.234-.868 3.31-3.644 3.31-1.618 0-3.013-1.118-3.013-2.582 0-2.09 1.984-2.847 3.55-2.847.586 0 1.294.04 1.663.114 0-.637-.54-1.728-1.9-1.728-1.25 0-1.566.405-1.967.868ZM8.716 8.19c-2.04 0-2.304.87-2.304 1.416 0 .878 1.043 1.168 1.6 1.168 1.02 0 2.067-.282 2.232-2.423a6.2 6.2 0 0 0-1.528-.161"/>
+          </svg>
+        </a>
+        <a href="https://www.tiktok.com/@thewomenatlas" target="_blank" rel="noopener" aria-label="TikTok">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-1.82V16.3a5.3 5.3 0 1 1-5.3-5.3c.42 0 .83.05 1.23.15v2.72a2.64 2.64 0 1 0 1.41 2.43V0h2.66a4.84 4.84 0 0 0 4.83 4.84v1.85c-.36 0-.71-.03-1.06-.1z"/>
+          </svg>
+        </a>
+      </div>
+      <div class="mem-footer__bottom">
+        <span>Copyright &copy; 2025 - 2026 WomenAtlas Media &amp; Events Sdn. Bhd. 202501054466 (1655872-X). All Rights Reserved.</span>
+        <div class="mem-footer__legal">
+          <a href="#">Privacy</a>
+          <span>&middot;</span>
+          <a href="#">Terms</a>
+          <span>&middot;</span>
+          <a href="#">Cookies</a>
+        </div>
+      </div>
+    </div>
+  </footer>
 
 @endsection
 
 @push('styles')
   <link rel="stylesheet" href="{{ asset('site/css/membership.css') }}">
-  <link rel="stylesheet" href="{{ asset('site/css/footer-main.css') }}">
+  <link rel="stylesheet" href="{{ asset('site/css/footer-membership.css') }}">
 @endpush
 
 @push('scripts')
-  <script src="{{ asset('site/js/script-footer.js') }}"></script>
   <script>
     (function () {
       var burger = document.getElementById('burger');

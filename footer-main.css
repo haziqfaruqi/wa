@@ -1,13 +1,13 @@
 /* ── footer-main.css — shared bottom footer ── */
 #footer-main-wrap {
   position: relative;
-  background: url('assets/venue.webp') center center / cover no-repeat;
+  background: url('assets/speaker-1.webp') center center / cover no-repeat;
 }
 #footer-main-wrap::before {
   content: '';
   position: absolute;
   inset: 0;
-  background: rgba(20, 4, 8, .84);
+  background: rgb(20 4 8 / 64%);
   pointer-events: none;
 }
 .fmain {
@@ -40,13 +40,15 @@
 .fmain-desc {
   font-size: 14px;
   line-height: 1.75;
-  color: rgba(255,255,255,.55);
+  color: rgb(255 255 255 / 72%);
   margin: 0 0 20px;
 }
 .fmain-socials {
   display: flex;
+  justify-content: center;
   gap: 18px;
   align-items: center;
+  padding-bottom: 20px;
 }
 .fmain-socials a {
   color: rgba(255,255,255,.7);
@@ -70,8 +72,8 @@
   margin-bottom: 4px;
 }
 .fmain-col a {
-  font-size: 14px;
-  color: rgba(255,255,255,.6);
+  font-size: 16px;
+  color: rgb(255 255 255 / 72%);
   text-decoration: none;
   transition: color .2s;
 }
@@ -79,8 +81,8 @@
 .fmain-legal {
   border-top: 1px solid rgba(255,255,255,.15);
   padding: 24px 0 0;
-  font-size: 12px;
-  color: rgba(255,255,255,.35);
+  font-size: 14px;
+  color: rgb(255 255 255 / 72%);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -93,7 +95,7 @@
   align-items: center;
 }
 .fmain-legal-links a {
-  color: rgba(255,255,255,.45);
+  color: rgb(255 255 255 / 72%);
   text-decoration: none;
 }
 .fmain-legal-links a:hover { color: #fff; }
