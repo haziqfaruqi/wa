@@ -34,7 +34,7 @@
 
 #footer-forum-wrap .lf-footer__tagline {
   font-family: "Poppins", -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  font-size: 11px;
+  font-size: 14px;
   font-weight: 700;
   letter-spacing: .14em;
   color: #e8b84b;
@@ -44,7 +44,7 @@
 
 #footer-forum-wrap .lf-footer__desc {
   font-family: "Poppins", -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.75;
   color: rgba(255,255,255,.65);
   margin: 0 0 24px;
@@ -93,7 +93,7 @@
 
 #footer-forum-wrap .lf-footer__col a {
   font-family: "Poppins", -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  font-size: 14px;
+  font-size: 17px;
   color: rgba(255,255,255,.7);
   text-decoration: none;
   transition: color .2s;

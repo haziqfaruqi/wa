@@ -7,7 +7,8 @@
     </div>
     <div class="lf-footer__brand-body">
       <p class="lf-footer__tagline">WHERE WOMEN ARE SEEN, HEARD &amp; RECOGNISED</p>
-      <p class="lf-footer__desc">WomenAtlas Media &amp; Events. Empowering women<br>through leadership, visibility, and community.</p>
+      <p class="lf-footer__desc"><b>Building Women Who Lead.</b><br>
+Connecting women to Funding, Opportunities, Strategic Partnerships, <br>and Influential networks that transform ambition into impact.</p>
       <div class="lf-footer__socials">
         <a href="https://www.linkedin.com/company/womenatlas" aria-label="LinkedIn"><img src="/storage/media/mini-linkedin.webp" alt="LinkedIn" width="24" height="24"></a>
         <a href="https://www.facebook.com/womenatlasofficial/" aria-label="Facebook"><img src="/storage/media/mini-fb.webp" alt="Facebook" width="24" height="24"></a>

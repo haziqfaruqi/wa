@@ -6,7 +6,7 @@
     var path = window.location.pathname;
     var onHome = path.indexOf('homepage.html') !== -1 || path === '/' || path.endsWith('/');
     var onSummit = path.indexOf('summit.html') !== -1;
-    fetch('footer-main.html')
+    fetch('footer-main.html', { cache: 'no-store' })
       .then(function (r) { return r.text(); })
       .then(function (html) {
         els.forEach(function (el) {
