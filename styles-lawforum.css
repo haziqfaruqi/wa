@@ -745,7 +745,7 @@ a {
 
 /* ---- Theme cards ---- */
 .themes-section {
-  padding: 64px 0 80px;
+  padding: 48px 0 40px;
   background: #fff;
 }
 
@@ -804,7 +804,7 @@ a {
 .programme-heading {
   background: #fff;
   text-align: center;
-  padding: 64px 48px 48px;
+  padding: 0px 48px 48px;
 }
 
 .programme-title {
@@ -1294,7 +1294,7 @@ a {
 /* ---- Who Should Attend ---- */
 .wsa-section {
   background: #fff;
-  padding: 64px 48px 64px;
+  padding: 24px 48px 64px;
 }
 
 .wsa-wrap {
@@ -1664,7 +1664,7 @@ a {
 .partners {
   background: #fff;
   color: var(--wa-maroon);
-  padding: 80px 48px;
+  padding: 64px 48px;
   position: relative;
   overflow: hidden;
 }

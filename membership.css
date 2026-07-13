@@ -924,6 +924,7 @@ a { color: inherit; }
 @media (max-width: 900px) {
   .nav__links { display: none; }
   .nav__burger { display: flex; }
+  .btn-buy { display: none; }
 
   .nav--open .nav__links {
     display: flex;
@@ -945,6 +946,7 @@ a { color: inherit; }
 
   .hero__inner {
     grid-template-columns: 1fr;
+    gap: 24px;
     padding: 56px 28px;
     text-align: center;
   }
@@ -965,7 +967,7 @@ a { color: inherit; }
 
   .community { padding: 64px 28px; }
   .community__inner { grid-template-columns: 1fr; gap: 40px; text-align: center; }
-  .community__item { text-align: left; }
+  .community__item { text-align: left; font-size: 1.15em; padding: 20px 22px; }
 
   .principles__divider { margin-top: 48px; }
   .principles { grid-template-columns: 1fr; margin-top: 48px; gap: 24px; }
