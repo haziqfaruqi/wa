@@ -2,6 +2,24 @@
 (function () {
   "use strict";
 
+  /* ---------- Scroll reveal ---------- */
+  var revealEls = document.querySelectorAll(".reveal, .reveal-stagger");
+  if (revealEls.length) {
+    if ("IntersectionObserver" in window) {
+      var revealObserver = new IntersectionObserver(function (entries, observer) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("is-visible");
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.15, rootMargin: "0px 0px -60px 0px" });
+      revealEls.forEach(function (el) { revealObserver.observe(el); });
+    } else {
+      revealEls.forEach(function (el) { el.classList.add("is-visible"); });
+    }
+  }
+
   /* ---------- Toast ---------- */
   var toastEl = document.getElementById("toast");
   var toastTimer;

@@ -34,7 +34,7 @@
               stroke-width="2">
               <rect x="3" y="4.5" width="18" height="17" rx="2" />
               <path d="M3 9h18M8 2.5v4M16 2.5v4" />
-            </svg>25 July 2026</span>
+            </svg>08 August 2026</span>
           <span class="pill"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
               stroke-width="2">
               <path d="M12 21s7-6.2 7-11a7 7 0 1 0-14 0c0 4.8 7 11 7 11z" />
@@ -61,7 +61,7 @@
       <div class="intro__img">
         <img src="storage/media/hero-2.webp" alt="Women in law and leadership" />
       </div>
-      <div class="intro__content">
+      <div class="intro__content reveal">
         <h2 class="intro__h2-line1">A legal qualification was never just a path to practice.</h2>
         <h2 class="intro__h2-line2">It is a foundation for <span class="it">leadership.</span></h2>
         <div class="intro__body">
@@ -100,10 +100,10 @@
 
   <!-- THEMES -->
   <section class="themes-section">
-    <div class="section-head" style="margin-bottom:40px;">
+    <div class="section-head reveal" style="margin-bottom:40px;">
       <h2>Every session ties to <span class="accent">one pillar.</span></h2>
     </div>
-    <div class="themes-grid">
+    <div class="themes-grid reveal-stagger">
       <div class="theme">
         <span class="n">1</span>
         <h3>Law &amp; Justice</h3>
@@ -130,7 +130,7 @@
   <!-- WHO SHOULD ATTEND -->
   <section class="wsa-section">
     <div class="wsa-wrap">
-      <div class="section-head">
+      <div class="section-head reveal">
         <h2>Who Should <span class="accent">Attend</span></h2>
       </div>
       <div class="wsa-tabs" role="tablist">
@@ -139,7 +139,7 @@
         <button class="wsa-tab"        role="tab" aria-selected="false" data-tab="public">Public Sector</button>
         <button class="wsa-tab"        role="tab" aria-selected="false" data-tab="future">Future Leaders</button>
       </div>
-      <div class="wsa-panels">
+      <div class="wsa-panels reveal">
 
         <div class="wsa-panel active" data-panel="legal">
           <div class="wsa-left">
@@ -227,18 +227,18 @@
   <section class="speakers-announce" id="speakers">
     <div class="speakers-announce__inner">
       <div class="eyebrow center" style="margin-bottom:16px;">The Women Shaping Law, Policy and Leadership</div>
-      <div class="section-head">
+      <div class="section-head reveal">
         <h2>Speakers <span class="accent">Faculty</span></h2>
         <p>The strength of this forum is its people — senior voices across the<br><strong>Bench, The Boardroom, Regulation</strong> and <strong>Legal Innovation.</strong></p>
       </div>
-      <div class="speakers-announce__soon">SPEAKERS ANNOUNCING SOON</div>
+      <div class="speakers-announce__soon reveal">SPEAKERS ANNOUNCING SOON</div>
       <div class="center" style="margin-top:40px;"><button class="btn btn-primary">Be the first to know <span>→</span></button></div>
     </div>
   </section>
 
     <!-- Advisory Council -->
     <div class="advisory-wrap">
-    <div class="advisory">
+    <div class="advisory reveal">
       <div class="body">
         <h3>A curated circle of <span class="it">distinguished women.</span></h3>
         <p class="advisory-lede">Drawn from the <b>judiciary</b>, <b>senior practice</b>, <b>corporate counsel</b>, <b>governance</b>, <b>academia</b> and <b>regulation</b>, lending their experience and credibility to the forum.</p>
@@ -262,8 +262,8 @@
   <!-- MASTERCLASS -->
   <section class="masterclass">
     <div class="in">
-      <div class="img"><img src="storage/media/attendees.webp" alt="Masterclass"></div>
-      <div class="body">
+      <div class="img reveal"><img src="storage/media/attendees.webp" alt="Masterclass"></div>
+      <div class="body reveal">
         <h2>The Lawyer's AI Playbook</h2>
         <p class="lede">From <b>Stuck to Started</b> — a hands-on <b>AI Masterclass</b> for women in law.</p>
         <p class="lede" style="margin-top:24px;">Map where <b>AI</b> fits your practice, work through a real task, and leave with a <b>90-day adoption plan</b>, a <b>vetted toolkit</b>, and the <b>guardrails</b> that matter: confidentiality, privilege, verification and the amended <b>PDPA.</b></p>
@@ -281,7 +281,7 @@
     <div class="section-head">
       <h2 style="white-space:nowrap;">Why Attend This <span class="accent">Forum</span> ?</h2>
     </div>
-    <div class="why-grid">
+    <div class="why-grid reveal-stagger">
       <div class="why-card">
         <div class="why-card__img"><img src="storage/media/sp-1.webp" alt="The Room"></div>
         <h3>The Room</h3>
@@ -309,11 +309,11 @@
 
   <section class="pricing" id="pricing">
     <div class="in">
-      <div class="section-head">
+      <div class="section-head reveal">
         <h2>A premier, senior-level <span class="accent">forum.</span></h2>
         <p><b>Seats</b> are <b>LIMITED</b> and <b>Curated.</b></p>
       </div>
-      <div class="grid-2">
+      <div class="grid-2 reveal-stagger">
         <div class="tier">
           <h3>The Forum</h3>
           <div class="desc"><b style="color:#000;font-weight:700;">For the individual delegate.</b></div>
@@ -347,7 +347,7 @@
 
   <!-- NEWSLETTER -->
   <section class="newsletter-band">
-    <div class="newsletter-band__inner">
+    <div class="newsletter-band__inner reveal">
       <h2>Be part of the conversation shaping the future of women in law.</h2>
       <p>Not ready yet? Join the list and be first to hear speaker<br>reveals and early-bird access.</p>
       <form class="newsletter-band__form" data-news>
@@ -360,10 +360,10 @@
   <!-- PARTNERS -->
   <section class="partners" id="partners">
     <img class="partners__tugu" src="storage/media/tugu-bg.webp" alt="">
-    <div class="in">
+    <div class="in reveal">
       <h2>Built with a <span class="it" style="color:var(--wa-magenta)">small circle</span> of<br>aligned partners.</h2>
     </div>
-    <div class="partners__body">
+    <div class="partners__body reveal">
       <div class="cards">
         <div class="pcard">
           <h3>Partners &amp; Endorsers</h3>
