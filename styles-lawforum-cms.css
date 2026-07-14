@@ -2281,6 +2281,15 @@ a {
     width: 64%;
   }
 
+  .hero .pills {
+    grid-template-columns: 1fr;
+    max-width: 100%;
+  }
+
+  .hero .pills .pill:last-child {
+    grid-column: auto;
+  }
+
   .grid-4 {
     grid-template-columns: repeat(2, 1fr);
   }
