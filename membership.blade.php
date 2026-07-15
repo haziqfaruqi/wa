@@ -4,17 +4,52 @@
 @section('content')
 
   <!-- NAV -->
-  <header class="nav" id="nav">
-    <div class="nav__inner">
-      <a href="{{ url('/homepage.html') }}" class="nav__logo"><img src="storage/media/wa-logo.webp" alt="{{ $siteSettings?->site_title ?? 'WomenAtlas' }}"></a>
-      <nav class="nav__links" aria-label="Primary">
-        <a href="{{ url('/homepage.html') }}#about">About</a>
-        <a href="{{ url('/homepage.html') }}#sponsors">Sponsors</a>
-        <a href="{{ url('/membership.html') }}">Membership</a>
+  <div class="announce">
+    <div class="announce-inner">
+      <span class="lbl">NEXT UP&nbsp;</span>
+      <span class="msg">
+        <strong>Women in Law &amp; Leadership Forum</strong>
+        <span class="dot">·</span>
+        <span>One-Day Forum + AI-Adoption Leadership Masterclass</span>
+        <span class="dot">·</span>
+        <strong>08 August 2026</strong>
+        <span class="dot">·</span>
+        <span>Kuala Lumpur</span>
+        <span>&nbsp;</span>
+      </span>
+      <a class="cta" href="{{ url('/lawforum.html') }}">Book Your Seat Today <span>→</span></a>
+    </div>
+  </div>
+  <header id="nav">
+    <div class="nav">
+      <a class="brand" href="{{ url('/homepage.html') }}">
+        <img src="storage/media/wa-logo.webp" alt="{{ $siteSettings?->site_title ?? 'WomenAtlas' }}" />
+      </a>
+      <nav>
+        <a class="menubtn" href="{{ url('/homepage.html') }}">HOME</a>
+        <a class="menubtn" href="{{ url('/homepage.html') }}#about">FOUNDER</a>
+        <a class="menubtn" href="{{ url('/homepage.html') }}#programmes">PROGRAMMES</a>
+        <div class="nav-event-dropdown">
+          <button class="menubtn nav-event-trigger" type="button" aria-haspopup="true" aria-expanded="false">
+            EVENTS
+            <span class="nav-event-chevron" aria-hidden="true"></span>
+          </button>
+          <div class="nav-event-menu" role="menu">
+            <a href="{{ url('/summit.html') }}" role="menuitem">
+              <span>She Leads. She Brands.</span>
+              <small>04th - 05th June 2026</small>
+            </a>
+            <a href="{{ url('/lawforum.html') }}" role="menuitem">
+              <span>She Leads. She Defends.</span>
+              <small>08th Aug 2026</small>
+            </a>
+          </div>
+        </div>
+        <a class="menubtn active" href="{{ url('/membership.html') }}">MEMBERSHIP</a>
+        <a class="btn evshow-btn sm" href="#" style="letter-spacing:.06em">EXPLORE PARTNERSHIP</a>
       </nav>
-      <a href="{{ url('/lawforum.html') }}#pricing" class="btn btn-buy">Buy Tickets</a>
-      <button class="nav__burger" id="burger" aria-label="Menu" aria-expanded="false">
-        <span></span><span></span><span></span>
+      <button class="menu-btn" aria-label="Menu" aria-expanded="false">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
       </button>
     </div>
   </header>
@@ -306,18 +341,41 @@
     })();
 
     (function () {
-      var burger = document.getElementById('burger');
-      var nav = document.getElementById('nav');
-      if (!burger || !nav) return;
-      burger.addEventListener('click', function () {
-        var open = nav.classList.toggle('nav--open');
-        burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+      var menuBtn = document.querySelector('.menu-btn');
+      var header = document.getElementById('nav');
+      if (!menuBtn || !header) return;
+      menuBtn.addEventListener('click', function () {
+        var open = header.classList.toggle('nav-open');
+        menuBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
       });
-      document.querySelectorAll('.nav__links a').forEach(function (a) {
+      document.addEventListener('click', function (e) {
+        if (!e.target.closest('header')) {
+          header.classList.remove('nav-open');
+          menuBtn.setAttribute('aria-expanded', 'false');
+        }
+      });
+      header.querySelectorAll('.nav nav > a').forEach(function (a) {
         a.addEventListener('click', function () {
-          nav.classList.remove('nav--open');
-          burger.setAttribute('aria-expanded', 'false');
+          header.classList.remove('nav-open');
+          menuBtn.setAttribute('aria-expanded', 'false');
         });
+      });
+    })();
+
+    (function () {
+      var dropdown = document.querySelector('.nav-event-dropdown');
+      var trigger = document.querySelector('.nav-event-trigger');
+      if (!dropdown || !trigger) return;
+      trigger.addEventListener('click', function (e) {
+        e.stopPropagation();
+        var open = dropdown.classList.toggle('is-open');
+        trigger.setAttribute('aria-expanded', open ? 'true' : 'false');
+      });
+      document.addEventListener('click', function (e) {
+        if (!e.target.closest('.nav-event-dropdown')) {
+          dropdown.classList.remove('is-open');
+          trigger.setAttribute('aria-expanded', 'false');
+        }
       });
     })();
   </script>

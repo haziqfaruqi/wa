@@ -14,6 +14,24 @@
   });
 })();
 
+/* EVENTS nav dropdown toggle */
+(function () {
+  var dropdown = document.querySelector('.nav-event-dropdown');
+  var trigger = document.querySelector('.nav-event-trigger');
+  if (!dropdown || !trigger) return;
+  trigger.addEventListener('click', function (e) {
+    e.stopPropagation();
+    var open = dropdown.classList.toggle('is-open');
+    trigger.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  document.addEventListener('click', function (e) {
+    if (!e.target.closest('.nav-event-dropdown')) {
+      dropdown.classList.remove('is-open');
+      trigger.setAttribute('aria-expanded', 'false');
+    }
+  });
+})();
+
 /* footer-main.html loader */
 (function () {
   function loadFooterMain() {
