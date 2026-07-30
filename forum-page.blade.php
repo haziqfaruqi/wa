@@ -35,11 +35,11 @@
               <rect x="3" y="4.5" width="18" height="17" rx="2" />
               <path d="M3 9h18M8 2.5v4M16 2.5v4" />
             </svg>08 August 2026</span>
-          <span class="pill"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+          <a class="pill" href="https://www.google.com/maps/search/?api=1&query=Four+Points+by+Sheraton+Puchong" target="_blank" rel="noopener"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
               stroke-width="2">
               <path d="M12 21s7-6.2 7-11a7 7 0 1 0-14 0c0 4.8 7 11 7 11z" />
               <circle cx="12" cy="10" r="2.5" />
-            </svg>Kuala Lumpur</span>
+            </svg>Four Points by Sheraton, Puchong</a>
           <span class="pill"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
               stroke-width="2">
               <circle cx="12" cy="12" r="9" />
@@ -373,7 +373,7 @@
             <li>Academic Institutions</li>
             <li>Media Partners</li>
           </ul>
-          <a class="link-arrow" href="#">Explore Partnership <span>→</span></a>
+          <a class="link-arrow" href="https://womenatlas.com/storage/media/wa-sponsorship-deck.pdf" target="_blank" rel="noopener">Explore Partnership <span>→</span></a>
         </div>
         <div class="scard">
           <h3>Sponsorship Circles</h3>
@@ -383,7 +383,7 @@
             <li>Champions' Circle</li>
             <li>Supporters' Circle</li>
           </ul>
-          <a class="link-arrow" href="#">Request The Prospectus <span>→</span></a>
+          <a class="link-arrow" href="https://womenatlas.com/storage/media/wa-partnership-deck.pdf" target="_blank" rel="noopener">Request The Prospectus <span>→</span></a>
         </div>
       </div>
     </div>
